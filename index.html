@@ -181,11 +181,11 @@
       certImg.onload = function() {
         ctx.drawImage(certImg, 0, 0, canvas.width, canvas.height);
 
-        ctx.font = 'bold 40px Arial';
+        ctx.font = 'bold 60px Arial';
         ctx.fillStyle = 'black';
-        ctx.fillText(name, 400, 400);  // Adjust X,Y for your template
-        ctx.font = '30px Arial';
-        ctx.fillText(date, 150, 700);  // Adjust X,Y for your template
+        ctx.fillText(name, 320, 380);  // Adjust X,Y for your template
+        ctx.font = '18px Arial';
+        ctx.fillText(date, 480, 710);  // Adjust X,Y for your template
 
         document.getElementById('downloadLink').href = canvas.toDataURL();
       };
