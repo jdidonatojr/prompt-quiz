@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prompt Engineering Knowledge Check</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f7f7f7;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    form div {
+      margin-bottom: 20px;
+    }
+    #certificateSection {
+      margin-top: 30px;
+      padding: 20px;
+      border: 2px solid #333;
+      background: #fff;
+    }
+    canvas {
+      display: block;
+      margin-top: 20px;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Module 6: Knowledge Check</h1>
+  <p>Test your understanding of prompt engineering concepts with these multiple choice questions. Select the answer you think is correct for each question.</p>
+  <form id="quizForm">
+
+    <div>
+      <label>1. What is one of the recommended best practices for prompt optimization?</label><br>
+      <input type="radio" name="q1" value="A"> A) Create comprehensive prompts that cover all possible scenarios<br>
+      <input type="radio" name="q1" value="B"> B) Iterate rapidly by testing multiple variations simultaneously<br>
+      <input type="radio" name="q1" value="C"> C) Document your prompts and their performance<br>
+      <input type="radio" name="q1" value="D"> D) Prioritize technical accuracy over other considerations<br>
+    </div>
+
+    <div>
+      <label>2. When refining prompts, what methodical approach is recommended?</label><br>
+      <input type="radio" name="q2" value="A"> A) Test multiple variables simultaneously to find optimal combinations quickly<br>
+      <input type="radio" name="q2" value="B"> B) Change only one element at a time and document the impact<br>
+      <input type="radio" name="q2" value="C"> C) Create comprehensive documentation after finalizing the prompt design<br>
+      <input type="radio" name="q2" value="D"> D) Balance systematic testing with intuitive design choices<br>
+    </div>
+
+    <div>
+      <label>3. What important consideration should be evaluated when designing prompts?</label><br>
+      <input type="radio" name="q3" value="A"> A) The efficiency and resource utilization of the prompt<br>
+      <input type="radio" name="q3" value="B"> B) The computational complexity and processing requirements<br>
+      <input type="radio" name="q3" value="C"> C) The clarity and specificity of instructions<br>
+      <input type="radio" name="q3" value="D"> D) Potential biases and stereotypes in framing and word choice<br>
+    </div>
+
+    <div>
+      <label>4. What creates a "virtuous cycle of refinement" in prompt engineering?</label><br>
+      <input type="radio" name="q4" value="A"> A) Progressively increasing prompt complexity as models improve<br>
+      <input type="radio" name="q4" value="B"> B) Incorporating diverse user feedback mechanisms<br>
+      <input type="radio" name="q4" value="C"> C) Standardizing prompts across different use cases<br>
+      <input type="radio" name="q4" value="D"> D) Maintaining consistency in prompt structures once established<br>
+    </div>
+
+    <div>
+      <label>5. According to the previous content, when do the most significant improvements in prompt effectiveness occur?</label><br>
+      <input type="radio" name="q5" value="A"> A) When implementing advanced prompt templating systems<br>
+      <input type="radio" name="q5" value="B"> B) When moving from basic prompts to structured approaches and implementing CINDEF<br>
+      <input type="radio" name="q5" value="C"> C) When optimizing prompt length and specificity<br>
+      <input type="radio" name="q5" value="D"> D) When incorporating domain-specific terminology<br>
+    </div>
+
+    <div>
+      <label>6. What should be included in an effective action plan for implementing prompt engineering?</label><br>
+      <input type="radio" name="q6" value="A"> A) A timeline for technical skill development and resource allocation<br>
+      <input type="radio" name="q6" value="B"> B) A comprehensive analysis of AI platform capabilities and limitations<br>
+      <input type="radio" name="q6" value="C"> C) Specific prompts, testing methodology, documentation approach, and success metrics<br>
+      <input type="radio" name="q6" value="D"> D) Potential integration challenges and mitigation strategies<br>
+    </div>
+
+    <div>
+      <label>7. What is a key benefit of using personas in prompt engineering?</label><br>
+      <input type="radio" name="q7" value="A"> A) They reduce token usage and computational requirements<br>
+      <input type="radio" name="q7" value="B"> B) They help generate more consistent and targeted outputs<br>
+      <input type="radio" name="q7" value="C"> C) They simplify the prompt creation process for users with various technical backgrounds<br>
+      <input type="radio" name="q7" value="D"> D) They provide clear documentation for future prompt iterations<br>
+    </div>
+
+    <div>
+      <label>8. What approach to testing prompts is most effective?</label><br>
+      <input type="radio" name="q8" value="A"> A) A/B testing multiple prompt variations with diverse user groups<br>
+      <input type="radio" name="q8" value="B"> B) Comprehensive testing of all prompt elements simultaneously<br>
+      <input type="radio" name="q8" value="C"> C) Changing only one element at a time<br>
+      <input type="radio" name="q8" value="D"> D) Iterative refinement based on qualitative user feedback<br>
+    </div>
+
+    <div>
+      <label>9. What is the recommended timeframe for evaluation in the personal action plan mentioned in the previous content?</label><br>
+      <input type="radio" name="q9" value="A"> A) Quarterly assessment cycles<br>
+      <input type="radio" name="q9" value="B"> B) Bi-monthly review periods<br>
+      <input type="radio" name="q9" value="C"> C) 30 days<br>
+      <input type="radio" name="q9" value="D"> D) Continuous evaluation with weekly checkpoints<br>
+    </div>
+
+    <div>
+      <label>10. What relationship does the content establish between prompt engineering techniques and user satisfaction?</label><br>
+      <input type="radio" name="q10" value="A"> A) They are complementary but independently variable factors<br>
+      <input type="radio" name="q10" value="B"> B) User satisfaction plateaus after basic prompt engineering techniques are implemented<br>
+      <input type="radio" name="q10" value="C"> C) User satisfaction increases significantly with more sophisticated prompt engineering techniques<br>
+      <input type="radio" name="q10" value="D"> D) User satisfaction primarily depends on prompt clarity rather than engineering sophistication<br>
+    </div>
+
+    <button type="submit">Submit Quiz</button>
+  </form>
+
+  <div id="result"></div>
+
+  <div id="certificateSection" style="display:none;">
+    <h2>Congratulations! You Passed!</h2>
+    <p>Fill in your name and date to generate your certificate:</p>
+    <input type="text" id="certName" placeholder="Your Name" /><br><br>
+    <input type="date" id="certDate" /><br><br>
+    <button id="generateCert">Generate Certificate</button>
+    <br>
+    <canvas id="certCanvas" width="1096" height="768"></canvas>
+    <br>
+    <a id="downloadLink" download="certificate.png">Download Certificate</a>
+  </div>
+
+  <script>
+    const quizForm = document.getElementById('quizForm');
+    const resultDiv = document.getElementById('result');
+    const certificateSection = document.getElementById('certificateSection');
+
+    const correctAnswers = {
+      q1: "C",
+      q2: "B",
+      q3: "D",
+      q4: "B",
+      q5: "B",
+      q6: "C",
+      q7: "B",
+      q8: "C",
+      q9: "C",
+      q10: "C"
+    };
+
+    quizForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      let score = 0;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      const percentage = (score / Object.keys(correctAnswers).length) * 100;
+      resultDiv.innerHTML = `Your score: ${percentage.toFixed(2)}%`;
+
+      if (percentage >= 90) {
+        certificateSection.style.display = 'block';
+      } else {
+        certificateSection.style.display = 'none';
+        resultDiv.innerHTML += "<br>Sorry, you need at least 90% to get the certificate. Try again!";
+      }
+    });
+
+    document.getElementById('generateCert').addEventListener('click', function() {
+      const name = document.getElementById('certName').value;
+      const date = document.getElementById('certDate').value;
+
+      const canvas = document.getElementById('certCanvas');
+      const ctx = canvas.getContext('2d');
+
+      const certImg = new Image();
+      certImg.onload = function() {
+        ctx.drawImage(certImg, 0, 0, canvas.width, canvas.height);
+
+        ctx.font = 'bold 40px Arial';
+        ctx.fillStyle = 'black';
+        ctx.fillText(name, 400, 400);  // Adjust X,Y for your template
+        ctx.font = '30px Arial';
+        ctx.fillText(date, 150, 700);  // Adjust X,Y for your template
+
+        document.getElementById('downloadLink').href = canvas.toDataURL();
+      };
+      certImg.src = 'certificate.jpg'; // MUST match your image file name
+    });
+  </script>
+</body>
+</html>
